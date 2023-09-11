@@ -9,7 +9,7 @@ N/A
 
 ## Usage
 
-![alt text](./assets/images/generate_pass_screenshot.png)
+![alt text](./Assets/images/Screen%20Shot%202023-09-10%20at%209.47.14%20PM.png)
 
 ## Credits
 N/A
