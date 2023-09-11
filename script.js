@@ -13,8 +13,9 @@ function generatePassword() {
   var Uppercase = confirm('Would you like to include uppercase characters?')
   var Numbers = confirm('Would you like to include numbers?')
   var Specials = confirm('Would you like to include special characters?')
-  
+
   var passLength = prompt('How many characters would you like your password to be?')
+
   
   if (Lowercase) {
     combined += lower
@@ -28,26 +29,30 @@ function generatePassword() {
   if (Specials) {
     combined += specs
   }
-  if (passLength < 8) {
-    alert('Your password must be at least 8 characters.')
+  while (passLength < 8 || passLength > 128) {
+    alert('Your password must be between 8 and 128 characters.')
     passLength = prompt('How many characters would you like your password to be?')
   }
-  if (passLength > 128) {
-    alert('Your password must be less than 128 characters.')
-    passLength = prompt('How many characters would you like your password to be?')
+  
+  var generatedPassword = ('')
+  
+  
+  for (var count = 0; count < passLength; count++) {
+    var random = Math.random()
+    var index = Math.floor(random * combined.length)
+    generatedPassword += combined[index]
   }
+  return generatedPassword
   }
+  
 
 // Write password to the #password input
 function writePassword() {
-  
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-
-  
   passwordText.value = password;
-  
   
 }
 
