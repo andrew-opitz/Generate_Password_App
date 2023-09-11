@@ -9,7 +9,7 @@ N/A
 
 ## Usage
 
-![alt text](./assets/generate_pass_screenshot.png)
+![alt text](./assets/images/generate_pass_screenshot.png)
 
 ## Credits
 N/A
