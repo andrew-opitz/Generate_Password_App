@@ -9,6 +9,8 @@ var password = ('')
 
 
 function generatePassword() {
+var combined = ('')
+
   var Lowercase = confirm('Would you like to inlcude lowercase characters?')
   var Uppercase = confirm('Would you like to include uppercase characters?')
   var Numbers = confirm('Would you like to include numbers?')
